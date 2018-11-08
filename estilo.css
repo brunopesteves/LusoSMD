@@ -1,0 +1,114 @@
+#fundotitulo {
+	margin-top: -10px;
+	background-color: #f4ecec;
+	height: 100px;
+}
+
+
+#titulo {
+	margin-top: -120px;
+	color: #474a3b;
+	text-align: center;
+	font-family: Gabriola;
+	font-size: 6em;
+	
+}
+
+body {
+	background-color: #f9f9f9;
+}
+
+#menu ul {
+	list-style: none;
+	text-align: right;
+	margin: -20px;
+}
+
+#menu li {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	font-family: Baskerville Old Face;
+	font-size: 2em;
+	
+}
+
+#menu a {
+	color: #8d8f83;
+	text-decoration: none;
+	margin-right: 50px;
+
+}
+
+
+h2 {	
+	font-family: Baskerville Old Face;
+	font-size: 2.5em;
+}
+
+#fernando {
+	margin-top: 200px;
+	font-family: Gabriola;
+	font-size: 3.5em;
+}
+
+h3 {
+	font-family: Gabriola;
+	font-size: 3em;
+}
+
+p {
+	font-family: Baskerville Old Face;
+	font-size: 1.85em;
+	color: #0a0b07;
+	line-height: 40px;
+}
+
+img {
+	border: 2px;
+	border-color: #000;
+}
+
+#destaques {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content:space-around;	
+}
+
+.destaque {
+	width: 300px;
+	margin: 20px;
+	text-align: left;
+	font-family: Baskerville Old Face;
+	font-size: 1em;
+	line-height: 30px;
+}
+
+#bruno {
+	float: left;
+	margin: 40px;
+}
+
+#homepage {
+	float: right;
+	margin-top: -100px;
+}
+
+#preto {
+	float: left;
+}	
+
+#olhalvo {
+	float: right;
+	
+}
+
+
+footer {
+	background-color: #f4ecec;
+	color: #dbdbd8;
+	text-align: center;
+	font-family: Baskerville Old Face;
+	padding: 5px;
+}
