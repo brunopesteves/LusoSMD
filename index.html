@@ -7,12 +7,24 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title>Um Luso no SMD</title>
     <link rel="stylesheet" type="text/css" href="estilo.css" /> 
-    <script src=""></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
+
 	 <div id="fundotitulo"></div>
 	 <div id="titulo"> UM LUSO NO SMD</div>
+
+	 <img id="bruno" src="imagens/bruno.jpg" alt="bruno" width="525" />
+
+	<div class="acessibilidade"> 
+	<button onclick='document.getElementById("musica").src = "videos/silence.mp3"'; type="img"> <img src="imagens/mute.png" alt="mute" width="25"/> </button>
+	<button onclick='document.getElementById("musica").src = "videos/verdes.mp3"'; type="img"> <img src="imagens/sound.ico" alt="sound" width="25"/> </button>
+	<button type="img" onclick="aumenta()"> <img src="imagens/increase.png" alt="grande" width="25"/> </button>
+	<button type="img" onclick="diminui()"> <img src="imagens/decrease.png" alt="pequeno" width="15"/> </button>
+	<button type="img" onclick="mais()"> <img src="imagens/contraste1.png" alt="mais" width="25"/> </button>
+	<button type="img" onclick="menos()"> <img src="imagens/contraste2.png" alt="menos" width="25"/> </button>
+	</div>
 
 	<nav id="menu"><ul>
 		 <li> <a href="autor.html"> O AUTOR </a> </li>
@@ -22,24 +34,24 @@
 		  </ul></nav>	
 
 	 
-	 <img id="bruno" src="imagens/bruno.jpg" alt="bruno" width="541" />
+	 
 	 <p></p>
 
-	 <div id="fernando"> "Tudo vale a pena, se a alma não é pequena" </div>
+	 <div class="fernando"> "Tudo vale a pena, se a alma não é pequena" </div>
 	 
-	 <p> Parafraseando o meu conterrâneo Fernando Pessoa, vale sempre a pena experimentar novos caminhos e desafios, se a nossa alma é sedenta de conhecimentos e novas experiências. Eu que o diga, que vim de Portugal e com 41 anos acabei inscrito no curso de SMD da UFC. Este site destina-se a partilhar as minhas experiências pessoais e técnicas como aluno desta desafiante graduação.
+	 <p class="texto"> Parafraseando o meu conterrâneo Fernando Pessoa, vale sempre a pena experimentar novos caminhos e desafios, se a nossa alma é sedenta de conhecimentos e novas experiências. Eu que o diga, que vim de Portugal e com 41 anos acabei inscrito no curso de SMD da UFC. Este site destina-se a partilhar as minhas experiências pessoais e técnicas como aluno desta desafiante graduação.
 	 <br/>
 	 </p>
 
 	 	 
 	 <div id="destaques">
-	 	<div class="destaque"> <a href="trabalhos.html/#jogo">  <img src="imagens/R3.png" alt="R3" height="200" /> 	JOGO 1º SEMESTRE </a> </div>
-	 	<div class="destaque"> <img src="imagens/gif.gif" alt="MAMI" height="200"/> TRABALHO MAMI</div>
-	 	<div class="destaque"><img src="imagens/BlocoSMD.jpg" alt="SMD" height="200"/> GRADUAÇÃO 20 ANOS DEPOIS </div>
+	 	<div class="destaque"> <a href="trabalhos.html#jogo">  <img src="imagens/r3.gif" alt="R3" height="175" />  </br> JOGO 1º SEMESTRE </a> </div>
+	 	<div class="destaque"> <a href="trabalhos.html#MAMI"> <img src="imagens/gif.gif" alt="MAMI" height="175"/> </br> TRABALHO MAMI <a> </div>
+	 	<div class="destaque"> <img src="imagens/BlocoSMD.jpg" alt="SMD" height="175"/> </br> GRADUAÇÃO 20 ANOS DEPOIS </div>
 	</div>
 
 <section>
-	<audio autoplay controls loop> <source src="videos/verdes.mp3" type=“audio/mpeg"> </audio>
+	<iframe id="musica" src="videos/verdes.mp3" allow="autoplay; loop" id="iframeAudio" style="display:none"> </iframe> 
 	<footer> Bruno Esteves 2018 </footer> 
 
 

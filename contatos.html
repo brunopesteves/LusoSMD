@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title> Um luso no SMD: Contatos</title>
     <link rel="stylesheet" type="text/css" href="estilo.css" /> 
-    <script src=""></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -13,15 +13,42 @@
 	 <div id="titulo"> UM LUSO NO SMD</div>
 
 	 <h2> CONTATOS </h2>
-	 <a id="homepage" href="home.html"> <img src="imagens/home.png" alt=¨HOME¨ width="100" />  </a>
+
+	<div class="acessibilidade"> 
+	<button onclick='document.getElementById("musica").src = "videos/silence.mp3"'; type="img"> <img src="imagens/mute.png" alt="mute" width="25"/> </button>
+	<button onclick='document.getElementById("musica").src = "videos/verdes.mp3"'; type="img"> <img src="imagens/sound.ico" alt="sound" width="25"/> </button>
+	<button type="img" onclick="aumenta()"> <img src="imagens/increase.png" alt="grande" width="25"/> </button>
+	<button type="img" onclick="diminui()"> <img src="imagens/decrease.png" alt="pequeno" width="15"/> </button>
+	<button type="img" onclick="mais()"> <img src="imagens/contraste1.png" alt="mais" width="25"/> </button>
+	<button type="img" onclick="menos()"> <img src="imagens/contraste2.png" alt="menos" width="25"/> </button>
+	</div>
+
+	 <a id="homepage" href="index.html"> <img src="imagens/home.png" alt=¨HOME¨ width="100" />  </a>
 
 	 <div id="contatos">
-	 	</div class="contato"> <a href="https://www.facebook.com/bruno.esteves.52"> <img src="imagens/face.png" alt=¨face¨ width="100" /> bruno.esteves.52 </a> </div>
-	 	</div class="contato"> <a href="https://www.linkedin.com/in/bruno-esteves-159ab4128/"> <img src="imagens/linked.png" alt=¨linked¨ width="100" /> bruno-esteves-159ab4128 </a> </div>
- 		</div class="contato"> <a href="https://www.instagram.com/esteves3272/"> <img src="imagens/insta.png" alt=¨insta¨ width="100" /> esteves3272 </a> </div>
- 		</div class="contato"> <a href="https://www.youtube.com/user/TheMrBrunoE"> <img src="imagens/tube.png" alt=¨tube¨ width="100" />TheMrBrunoE </a> </div>
- 		</div class="contato"> <a href="https://web.whatsapp.com"> <img src="imagens/zap.png" alt=¨zap¨ width="100" /> + 55 85 98147 2003 </a> </div>
- 		</div class="contato"> <a href="mailto:brunopesteves@hotmail.com"> <img src="imagens/gmail.png" alt=¨mail¨ width="100" /> brunopesteves@hotmail.com </a> </div>
+	 	<div class="contato"> <a href="https://www.facebook.com/bruno.esteves.52" target="_blank"> <img src="imagens/face.png" alt=¨face¨ width="100" /> bruno.esteves.52 </a> </div>
+	 	<div class="contato"> <a href="https://www.linkedin.com/in/bruno-esteves-159ab4128/" target="_blank"> <img src="imagens/linked.png" alt=¨linked¨ width="100" /> bruno-esteves-159ab4128 </a> </div>
+ 		<div class="contato"> <a href="https://www.instagram.com/esteves3272/" target="_blank"> <img src="imagens/insta.png" alt=¨insta¨ width="100" /> esteves3272 </a> </div>
+ 		<div class="contato"> <a href="https://web.whatsapp.com" target="_blank"> <img src="imagens/app.ico" alt=¨zap¨ width="100" /> + 55 85 98147 2003 </a> </div>
+ 		<div class="contato"> <a href="https://www.youtube.com/user/TheMrBrunoE" target="_blank"> <img src="imagens/tube.png" alt=¨tube¨ width="100" />TheMrBrunoE </a> </div>
+ 		<div class="contato"> <a href="mailto:brunopesteves@hotmail.com" target="_blank"> <img src="imagens/gmail.png" alt=¨mail¨ width="100" /> brunopesteves@hotmail.com </a> </div>
+ 	</div>
+
+<div id="area">
+			<h1>
+				Entre em contato comigo :)
+			</h1> 	
+
+<form id="formulario" autocomplete="off">
+      <fieldset>
+        <legend>Formulário</legend>
+        <label>Nome:</label><input class="campo_nome" type="text"><br>
+        <label>Email:</label><input class="campo_email" type="password"><br>
+        <label>Celular:</label><input class="campo_email" type="password"><br>
+        <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8"></textarea><br>
+        <input class="btn_submit" type="submit" value="Enviar">
+      </fieldset>
+    </form>
 
 	<footer> Bruno Esteves 2018 </footer> 
 

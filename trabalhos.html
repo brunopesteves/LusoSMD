@@ -5,28 +5,71 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title> Um luso no SMD: Trabalhos</title>
     <link rel="stylesheet" type="text/css" href="estilo.css" /> 
-    <script src=""></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
 	 <div id="fundotitulo"></div>
 	 <div id="titulo"> UM LUSO NO SMD</div>
 
-	 <h2> TRABALHOS </h2>
-	 <a id="homepage" href="home.html"> <img src="imagens/home.png" alt=¨HOME¨ width="100" /> </a>
+	 <div class="acessibilidade">
+	<button onclick='document.getElementById("musica").src = "videos/silence.mp3"'; type="img"> <img src="imagens/mute.png" alt="mute" width="25"/> </button>
+	<button onclick='document.getElementById("musica").src = "videos/r3.mp3"'; type="img"> <img src="imagens/sound.ico" alt="sound" width="25"/> </button>
+	<button type="img" onclick="aumenta()"> <img src="imagens/increase.png" alt="grande" width="25"/> </button>
+	<button type="img" onclick="diminui()"> <img src="imagens/decrease.png" alt="pequeno" width="15"/> </button>
+	<button type="img" onclick="mais()"> <img src="imagens/contraste1.png" alt="mais" width="25"/> </button>
+	<button type="img" onclick="menos()"> <img src="imagens/contraste2.png" alt="menos" width="25"/> </button>
+	</div>
 
-	 <h3> Jogo 1º Semestre </h3>
-	 <a id="jogo"></a>
-	  <img src="imagens/R3.png" alt="R3" height="200" />
+	 <h2> TRABALHOS </h2>
+
+	 <a id="homepage" href="index.html"> <img src="imagens/home.png" alt=¨HOME¨ width="100" /> </a>
+
+	 
 
 	<h3> Trabalho de MAMI </h3>
-	 <a id="MAMI"></a>
-	 <img src="imagens/gif.gif" alt="MAMI" height="200"/>
 
+	 <a id="MAMI"></a>
+	 <img src="imagens/gif.gif" alt="MAMI"/>
+
+	 <p> MAMI é simplesmente uma das disciplinas mais interessantes, úteis e, tem quem o diga, difíceis da graduação em Sistemas e Mídias Digitais (SDM), do Instituto Virtual da Universidade Federal do Ceará (UFC).  E, não sendo repetitivo, SMD é uma das graduações mais inovadoras, ecléticas e interessantes da UFC.
+	 <br/>
+	 Em traços gerais, a primeira parte do trabalho de avaliação da disciplina consiste em nós escolhermos um jogo presente na segunda geração de consoles, que cronologicamente corresponde aos anos de 1976 e 1983, cuja principal estrela foi o Atari 2600. Sendo eu pai de um Nintendista,  escolhi foi Donkey Kong, um clássico do Arcade, que foi lançado para o Atari em 1982 (Atari).
+	 <br/>
+	 Donkey Kong é um jogo básico de plataformas, com várias fases, em uma única tela, em que o personagem principal, que nós controlamos, tem que chegar ao topo da estrutura, onde está posicionada a “donzela em perigo”, que foi raptada por um “suposto” gorila, que dá o nome ao jogo e que hoje em dia é um personagem emblemático da Nintendo. Para isso, o nosso herói, que é quase a cara do garoto propaganda da Nintendo, o “Mario”, tem que percorrer plataformas, subir e descer escadas, e evitar obstáculos e “capangas” do vilão ao longo do seu caminho. 
+	</p>
+
+	 <img src="imagens/prot1.gif" alt="prot1" width="400" />
+	 <img src="imagens/prot2.gif" alt="prot2" width="400" />
+	 <img src="imagens/prot3.gif" alt="prot3" width="400" />
+
+	 <p>
+	 	 plataforma usada para a criação dos protótipos foi o Processing, com utilização essencialmente de procedimentos, considerando que se tratavam de protótipos de mecânicas, com placeholders, ou seja, com objetos pouco complexos e como o  que importava destacar neste momento eram as mecânicas do jogo, as ações e interações dos elementos, considerei que seria a abordagem mais apropriada. 
+
+Em termos de linguagem propriamente dita e lógica computacional, esta não se revelou muito complicada, principalmente nos movimentos retilíneos uniformes, tendo sido a mais exigente, não em termos de linguagem, mas de recursos lógicos e técnica de programação a implementação do pulo, pelo que o Processing se revelou uma ferramenta adequada para a construção destes protótipos, até mesmo por questões de preferência pessoal.
+	 </p>
+	 
+	 <a href="https://processing.org/download//" target="_blank"> <img src="imagens/processing.png" alt="processing" width="100"/> Página de download Processimg </a>
+	 <a href="http://smdmamipoderosa.blogspot.com/" target="_blank"> <img src="imagens/blogspot.png" alt="blogspot" width="100"/> Blog da disciplina </a>
+	 <a href="https://drive.google.com/file/d/1kaiPZ0ndwy8BrSipUvmL-dZFPXB5-UuK/" target="_blank"> <img src="imagens/drive.png" alt="drive" width="100"/> Link download código </a>
+
+	 <iframe width="560" height="315" src="https://www.youtube.com/embed/_WYeINqLFwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	 <a id="jogo"> <h3> Jogo 1º Semestre </h3>	</a>
+	 <img src="imagens/r3.gif" alt="R3" height="500" />
+
+
+	 <p> um jogo educativo sobre reciclagem de lixo. A atividade faz parte do Projeto Integrado 1 do curso Sistemas e Mídias Digitais da Universidade Federal do Ceará (turma 2017.2). </p>
+
+	 <a href="https://r3ojogo.wordpress.com" target="_blank"> <img src="imagens/wordpress.png" alt="blogspot" width="100"/> Blog de desenvolvimento do jogo </a>
+
+	<h3> Trabalho de Narrativas Multimídia </h3>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/a9mEImNCJ0A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  
 
-	<footer> Bruno Esteves 2018 </footer> 
+	<footer> Bruno Esteves 2018 </footer>
+	<iframe id="musica" src="videos/r3.mp3" allow="autoplay; loop" id="iframeAudio" style="display:none"> </iframe>
 
 </body>
 

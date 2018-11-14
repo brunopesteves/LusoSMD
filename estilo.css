@@ -10,18 +10,23 @@
 	color: #474a3b;
 	text-align: center;
 	font-family: Gabriola;
-	font-size: 6em;
-	
+	font-size: 6em;	
 }
 
 body {
 	background-color: #f9f9f9;
 }
 
+.acessibilidade {
+	background-color: #f9f9f9;
+	margin-left: 40px;
+}
+
 #menu ul {
 	list-style: none;
 	text-align: right;
-	margin: -20px;
+	padding-right: 40px;
+	margin: -40px;
 }
 
 #menu li {
@@ -40,32 +45,38 @@ body {
 
 }
 
+button {
+	background-color: rgb(0,0,0,0);
+	border: 0px;
+}
 
-h2 {	
+
+h2 {margin-left: 20px;	
 	font-family: Baskerville Old Face;
 	font-size: 2.5em;
 }
 
-#fernando {
-	margin-top: 200px;
+.fernando {
+	margin-top: 150px;
 	font-family: Gabriola;
 	font-size: 3.5em;
+	margin-bottom: -20px;
 }
 
-h3 {
+h3 { margin-left: 50px;
+	margin-bottom: -30px;
 	font-family: Gabriola;
 	font-size: 3em;
 }
 
-p {
+p {	margin-left: 40px;
 	font-family: Baskerville Old Face;
 	font-size: 1.85em;
-	color: #0a0b07;
 	line-height: 40px;
+	padding-right: 20px;
 }
 
-img {
-	border: 2px;
+img {border-image: 4px;
 	border-color: #000;
 }
 
@@ -73,37 +84,69 @@ img {
 	display: flex;
 	flex-flow: row;
 	flex-wrap: wrap;
-	justify-content:space-around;	
+	justify-content: space-between;
+	align-content: center;
 }
 
 .destaque {
-	width: 300px;
-	margin: 20px;
+	text-decoration: none;
+	margin: 40px;
 	text-align: left;
 	font-family: Baskerville Old Face;
 	font-size: 1em;
-	line-height: 30px;
+	line-height: 25px;
+	color: #0a0b07;
 }
 
 #bruno {
 	float: left;
-	margin: 40px;
+	padding: 40px;
+	margin-top: -40px;
 }
 
 #homepage {
 	float: right;
-	margin-top: -100px;
+	margin-top: -150px;
+	margin-right: 20px;
+	background-color: #f9f9f9;
 }
 
-#preto {
-	float: left;
-}	
 
-#olhalvo {
+#olhalvo, #beiramar {
 	float: right;
+	margin-right: 40px;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+
+#lisboa {
+	float: left;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+
+#contatos {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+}
+
+.contato {
+	margin: 50px;
+	height: 100px;
+	width: 400px;
+	}
+
+.contato a{
+	font-family: Gabriola;
+	font-size: 2em;
+	color: #474a3b;
+	text-decoration: none;
 	
 }
-
 
 footer {
 	background-color: #f4ecec;
@@ -111,4 +154,154 @@ footer {
 	text-align: center;
 	font-family: Baskerville Old Face;
 	padding: 5px;
+}
+
+#bebe {
+	margin-left: 40px;
+	border: 5px;
+	border-color: #000, solid;
+}
+
+#escola {
+	animation-name: fade2;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+#adol {
+	animation-name: fade3;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+#gravata {
+	animation-name: fade4;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+#atual {
+	animation-name: fade5;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fade2 {
+	0% {
+		opacity: 0; 	
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	100%	{
+		opacity: 1;
+	}
+}
+
+@keyframes fade3 {
+	0% {
+		opacity: 0; 	
+	}
+
+	40% {
+		opacity: 0;
+	}
+
+	100%	{
+		opacity: 1;
+	}
+}
+
+@keyframes fade4 {
+	0% {
+		opacity: 0; 	
+	}
+
+	60% {
+		opacity: 0;
+	}
+
+	100%	{
+		opacity: 1;
+	}
+}
+
+@keyframes fade5 {
+	0% {
+		opacity: 0; 	
+	}
+
+	80% {
+		opacity: 0;
+	}
+
+	100%	{
+		opacity: 1;
+	}
+}
+
+#area
+{
+  position:relative;
+  left:5%;
+  top:2em;
+  width:350px;
+  height:270px;
+  float: left;
+}
+#area #formulario
+{
+  position:absolute;
+  display:block;   
+}
+
+fieldset
+{
+  background-color:#DC143C;
+  width:350px;
+  height:300px;
+}
+
+#formulario label
+{
+  position:absolute;
+  left:19px;
+  margin-right:4px;
+}
+
+#formulario input.campo_nome
+{
+  background-color:#FFDAB9;
+  position:absolute;
+  left:95px;
+  top:25px;
+  width:235px;
+}
+#formulario input.campo_email
+{ 
+  background-color:#FFDAB9;
+  position:absolute;
+  top:45px;
+  left:95px;
+  margin-top:5px;
+  width:235px;
+}
+#formulario textarea.msg
+{
+  position:absolute;
+  background-color:#FFDAB9;
+  width:315px;
+  height: 195px;
+}
+
+#formulario input.btn_submit
+{
+  border-style:dashed;
+  position:absolute;
+  bottom: 0.5em;
+  right:10px;
+  background-color:#FFDAB9;
+  border-radius: 40px;
 }
