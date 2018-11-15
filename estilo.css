@@ -112,11 +112,15 @@ img {border-image: 4px;
 }
 
 
+#olhalvo {
+	margin-top: 40px;
+}
+
 #olhalvo, #beiramar {
 	float: right;
 	margin-right: 40px;
 	margin-left: 20px;
-	margin-top: 40px;
+	
 }
 
 #lisboa {
@@ -158,8 +162,9 @@ footer {
 
 #bebe {
 	margin-left: 40px;
-	border: 5px;
-	border-color: #000, solid;
+	animation-name: fade1;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
 }
 
 #escola {
@@ -184,6 +189,20 @@ footer {
 	animation-name: fade5;
 	animation-duration: 20s;
 	animation-iteration-count: infinite;
+}
+
+@keyframes fade1 {
+	0% {
+		opacity: 0; 	
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	100%	{
+		opacity: 1;
+	}
 }
 
 @keyframes fade2 {
