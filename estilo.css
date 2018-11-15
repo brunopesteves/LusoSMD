@@ -18,15 +18,19 @@ body {
 }
 
 .acessibilidade {
+	position: relative;
+	top: 20px;
+	width: 235px;
 	background-color: #f9f9f9;
+	margin-top: -40px;
 	margin-left: 40px;
 }
 
 #menu ul {
 	list-style: none;
 	text-align: right;
-	padding-right: 40px;
-	margin: -40px;
+	padding-right: 0px;
+	margin-top: -20px;
 }
 
 #menu li {
@@ -42,7 +46,6 @@ body {
 	color: #8d8f83;
 	text-decoration: none;
 	margin-right: 50px;
-
 }
 
 button {
@@ -57,13 +60,14 @@ h2 {margin-left: 20px;
 }
 
 .fernando {
-	margin-top: 150px;
+	margin-top: 130px;
 	font-family: Gabriola;
 	font-size: 3.5em;
 	margin-bottom: -20px;
 }
 
-h3 { margin-left: 50px;
+h3 {margin-top: -10px;
+	margin-left: 50px;
 	margin-bottom: -30px;
 	font-family: Gabriola;
 	font-size: 3em;
@@ -76,8 +80,8 @@ p {	margin-left: 40px;
 	padding-right: 20px;
 }
 
-img {border-image: 4px;
-	border-color: #000;
+iframe {
+	text-align: center;
 }
 
 #destaques {
@@ -101,12 +105,12 @@ img {border-image: 4px;
 #bruno {
 	float: left;
 	padding: 40px;
-	margin-top: -40px;
+	margin-top: 0px;
 }
 
 #homepage {
 	float: right;
-	margin-top: -150px;
+	margin-top: -130px;
 	margin-right: 20px;
 	background-color: #f9f9f9;
 }
@@ -158,6 +162,11 @@ footer {
 	text-align: center;
 	font-family: Baskerville Old Face;
 	padding: 5px;
+}
+
+.prototipos {
+	width: 100%;
+	text-align: center;
 }
 
 #bebe {
